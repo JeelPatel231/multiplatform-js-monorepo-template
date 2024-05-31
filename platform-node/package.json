@@ -1,0 +1,16 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "scripts": {
+    "build:all": "yarn workspaces foreach -Ap run build",
+    "build": "tsc",
+    "dev": "yarn build:all && node ./dist/index.js"
+  },
+  "dependencies": {
+    "platform-core": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,23 @@
+Multi(platform|runtime) typescript project monorepo
+===================================================
+
+Instructions to use:
+1. `yarn set version berry`
+2. `yarn config set nodeLinker node-modules` to use node-modules linker and save some headache for managing deps
+2. `yarn build` to build all the projects and have their dist folder populated
+3. You can now find the bundle of the platform specific library in the workspace/dist folder
+
+To build for a specific platform
+`yarn workspace <workspace-name> run build`
+
+eg: `yarn workspace platform-node run build` will build for node js
+
+
+Development
+-----------
+
+platform agnostic code shall be written in platform-core
+
+platform specific code shall go in their own implementation workspace folder
+
+for adding support for another platform, create a new module and make it a workspace

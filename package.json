@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "platform-core",
+    "platform-node",
+    "platform-browser"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -Ap run build"
+  },
+  "packageManager": "yarn@4.2.2"
+}
