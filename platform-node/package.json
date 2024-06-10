@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "platform-node",
   "version": "1.0.0",
   "scripts": {
     "build:all": "yarn workspaces foreach -Ap run build",
